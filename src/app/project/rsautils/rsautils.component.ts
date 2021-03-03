@@ -1,6 +1,5 @@
 import { Component, OnInit, VERSION } from '@angular/core';
 
-
 declare var JSEncrypt: any;
 
 
@@ -10,14 +9,11 @@ declare var JSEncrypt: any;
   styleUrls: ['./rsautils.component.scss']
 })
 export class RSAutilsComponent implements OnInit {
-  name:string;
+
   decrypt = new JSEncrypt();
 	encrypt = new JSEncrypt();
 	decryptdata: any;
    
-
-  
-
   constructor() {
     const privatekey = `-----BEGIN RSA PRIVATE KEY-----
 MIICXQIBAAKBgQChSh7Uz5Cvuduo9fdhEvn7LWrDUZaX4biAX5kBcvrGQzCiht1O
@@ -45,19 +41,11 @@ GEubxRjz/DuKbUaAOQIDAQAB
     
         this.encrypt.setPublicKey(publickey);
         const decryptDataRow =  this.encrypt.encrypt('saman');
-        this.name = `Angular! v${VERSION.full}`
         this.decrypt.setPrivateKey(privatekey);
         this.decryptdata = this.decrypt.decrypt(decryptDataRow);
-          console.log(this.decryptdata);
+        console.log(this.decryptdata);
       }
   ngOnInit(): void {
     
   }
-   
-   
-
-  
-
- 
-
 }
