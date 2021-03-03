@@ -30,7 +30,12 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jsencrypt/bin/jsencrypt.min.js",
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./src/jsencrypt.js",
+              "./src/config.js"
+            ]
           },
           "configurations": {
             "production": {

@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './project/home/home.component';
+import { RSAutilsComponent } from './project/rsautils/rsautils.component';
 
 const routes: Routes = [
-  {path:'' , component: HomeComponent}
+  {path:'' , component: RSAutilsComponent}
 ];
 
 @NgModule({
