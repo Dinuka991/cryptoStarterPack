@@ -1,8 +1,8 @@
 import { Component, OnInit, VERSION } from '@angular/core';
-import { Observable } from 'rxjs';
+
 
 declare var JSEncrypt: any;
-//import { JSEncrypt } from 'node_modules/jsencrypt/bin/jsencrypt.min.js'
+
 
 @Component({
   selector: 'app-rsautils',

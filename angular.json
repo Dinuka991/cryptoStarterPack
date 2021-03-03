@@ -31,10 +31,10 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "./node_modules/jsencrypt/bin/jsencrypt.min.js",
-              "./node_modules/jquery/dist/jquery.min.js",
               "./src/jsencrypt.js",
-              "./src/config.js"
+              "./src/config.js",
+              "./node_modules/systemjs/dist/system.js"
+              
             ]
           },
           "configurations": {
