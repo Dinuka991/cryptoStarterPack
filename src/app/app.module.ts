@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './project/aesUtils/home.component';
 import { RSAutilsComponent } from './project/rsautils/rsautils.component';
 import { HttpClientModule } from '@angular/common/http';
+import { Rsa2UtilsComponent } from './project/rsa2-utils/rsa2-utils.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    RSAutilsComponent
+    RSAutilsComponent,
+    Rsa2UtilsComponent
   ],
   imports: [
     BrowserModule,
