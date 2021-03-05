@@ -4,7 +4,7 @@ import { HomeComponent } from './project/aesUtils/home.component';
 import { RSAutilsComponent } from './project/rsautils/rsautils.component';
 
 const routes: Routes = [
-  {path:'' , component: RSAutilsComponent}
+  {path:'' , component: HomeComponent}
 ];
 
 @NgModule({

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core'; 
+import { Observable } from 'rxjs';
 import { HomeService } from '../_service/home.service';
 
 @Component({
@@ -20,6 +21,15 @@ export class HomeComponent implements OnInit {
     console.log(this.conversionEncryptOutput)
     this.conversionDecryptOutput = this.homeService.decrypt(this.conversionEncryptOutput)
     console.log(this.conversionDecryptOutput)
+
+    this.getkey();
+
+  }
+
+  getkey(){
+    this.homeService.getkey().subscribe( (data) => {
+      console.log(data);
+    })
 
   }
 
